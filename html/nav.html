@@ -1,0 +1,139 @@
+
+
+<head>
+<title>NSS</title>
+<link rel="icon" href="/t5.png">
+</head>
+<nav>
+
+<ul class="menu" style="display:inline-block;border-bottom:0px solid black;margin-top:-5;">
+	<li style="border-bottom:1px solid #e0e0e3;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);">소식ㆍ정보
+		<ul class="submenu">
+						<!--<li><a href="/">메인화면</a></li>-->
+						<li style="margin-top:15"><a href="/menu1/news/index.php">카드뉴스</a></li>
+						<li><a href="/menu1/cm/index.php">보도자료</a></li>
+						<!--<li><a href="/menu1/alert/index.php">공지사항</a></li>-->
+						<!--<li><a href="/menu1/index.php">익명게시판</a></li>-->
+						<!--	<li><a href="//agencies.tistory.com" target="_blank">agencies 블로그</a></li>-->
+						
+						<li><a href="/menu1/board/index.php">일반게시판</a></li>
+						<li></li>
+						<li></li>
+		</ul>
+	</li>
+	<li style="border-bottom:1px solid #e0e0e3;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);">주요활동
+		<ul class="submenu"><li style="margin-top:15"><a href="/menu2/vol.php">자원봉사</a></li>
+						<li><a href="/menu2/support.php">서포터즈</a></li>
+						<li><a href="/menu2/security.php">정보보안</a></li>
+						<li><!--<a href="/menu2/p/index.php">프로젝트</a>--></li>
+						<li></li>
+		</ul>
+	</li>
+	<li style="border-bottom:1px solid #e0e0e3;box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);">팀 소개
+		<ul class="submenu"><li style="margin-top:15"><a href="/menu3/greeting.php">인사말</a></li>
+						<li><a href="/menu3/slogun.php">표어</a></li>
+						<li><a href="/menu3/team/index.php">소개</a></li>
+						<li><!--<a href="/menu3/object.php">목표</a>--></li>
+						<li></li><li></li>
+		</ul>
+	</li>
+</ul>
+</nav>
+
+
+<style>
+*{margin:0; padding:0;}
+/* 메뉴바 */
+nav{padding-top:15;padding-bottom:15;text-align:center; margin-top:5px; width:1050px;margin:0 auto; cursor:pointer; z-index:10; position:relative;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline; text-underline-position:under;}
+a:visited{color:#00367b;}
+
+ul{list-style-type:none;height:70}
+.menu > li{float:left; width:350px; background-color:white; height:60px; line-height:55px; font-weight:bold; font-size:20px;font-family:'s6'}
+.submenu{overflow:hidden; height:0;}
+.submenu > li{background-color:#FBFBFB; height:35px; font-weight:500; font-size:20px; line-height:30px;font-family:'s5';padding:5}
+.menu:hover .submenu{height:170px;}
+
+
+
+
+
+@FONT-FACE{
+font-family:'s6';
+src:url('/fonts/s6.woff');
+}
+@FONT-FACE{
+font-family:'s5';
+src:url('/fonts/s5.woff');
+}
+
+@FONT-FACE{
+font-family:'s4';
+src:url('/fonts/s4.woff');
+}
+</style>
+
+<!-- 접속자 -->
+<div style="border-radius:10;border:1px solid black;margin-top:370;width:150px;height:300px;position:fixed;margin-left:10;font-family:'s4';font-size:20;line-height:2">
+<div style="background-color:#0351c5;color:white"><center><b>접속자 목록</b></center></div>
+<hr>
+<iframe src="/menu1/board/active.php" height="250" width="150" style="border:none;overflow-x:hidden;overflow-y:scroll"></iframe>
+
+</div>
+
+
+
+
+
+
+<!-- logo -->
+<div style="margin-top:355;width:111px;height:40px;position:fixed;right:10px;">
+<a href="/"><center>
+<img src="/fonts/nss.bmp" style="width:100;margin-left:-3"></center>
+</a>
+</div>
+
+
+
+
+
+<!-- 신고 팝업 -->
+<div style="margin-top:400;width:111px;height:40px;position:fixed;right:10px;background-color:#0351c5;border-radius:5px;border:1px solid #0351c5">
+<span style="line-height:2.5;color:white;font-size:17px;cursor:pointer;font-family:s4;"onclick="window.open('/report/index.html','report','width=600,height=700');"><center>민원ㆍ신고</center></span>
+</div>
+
+
+<!-- blog -->
+<div style="margin-top:455;width:111px;height:40px;position:fixed;right:10px;background-color:#fff;border-radius:5px;border:1px solid #0351c5">
+<span style="line-height:2.5;color:#0351c5;font-size:17px;cursor:pointer;font-family:s4"onclick="window.open('https://agencies.tistory.com','blog','width=1200,height=800');" ><center>블로그</center></span>
+</div>
+
+
+
+<!-- project
+<div style="margin-top:510;width:111px;height:40px;position:fixed;right:10px;background-color:#fff;border-radius:5px;border:1px solid #0351c5">
+<span style="line-height:2.5;color:#0351c5;font-size:17px;cursor:pointer;font-family:s4"onclick="window.open('/menu2/p/index.php','project','width=1200,height=800');" ><center>프로젝트</center></span>
+</div> -->
+
+
+
+<!-- gongji -->
+<div style="margin-top:510;width:111px;height:40px;position:fixed;right:10px;background-color:#fff;border-radius:5px;border:1px solid #0351c5">
+<span style="line-height:2.5;color:#0351c5;font-size:17px;cursor:pointer;font-family:s4"onclick="location.href='/menu1/alert/index.php'" ><center>알림</center></span>
+</div>
+
+
+
+<!-- anony -->
+<div style="margin-top:565;width:111px;height:40px;position:fixed;right:10px;background-color:#fff;border-radius:5px;border:1px solid #0351c5">
+<span style="line-height:2.5;color:#0351c5;font-size:17px;cursor:pointer;font-family:s4"onclick="location.href='/menu1/index.php'" ><center>익명게시판</center></span>
+</div>
+
+
+
+
+<!-- honor -->
+<div style="margin-top:620;width:111px;height:40px;position:fixed;right:10px;background-color:#fff;border-radius:5px;border:1px solid #0351c5">
+<span style="line-height:2.5;color:#0351c5;font-size:17px;cursor:pointer;font-family:s4"onclick="location.href='/honor/index.php'" ><center>명예의전당</center></span>
+</div>
