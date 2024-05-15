@@ -19,6 +19,6 @@ COPY mysql /var/lib/mysql
 COPY mysql2 /etc/mysql
 
 EXPOSE 80
-COPY backup.sql /docker-entrypoint-initdb.d/backup.sql
+#COPY backup.sql /docker-entrypoint-initdb.d/backup.sql
 #CMD ["/usr/sbin/run.sh", "/usr/local/bin/run_backup.sh"]
 CMD ["/usr/sbin/run.sh"]
